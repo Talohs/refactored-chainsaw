@@ -29,8 +29,12 @@
     justify-content: space-around;
 }
 
-.btnbackground{
-    /* polygon (10% 0, 91% 0, 100% 9%, 100% 92%, 92% 100%, 10% 100%, 0 93%, 0 9%); */
+.btnbgblye{
+    border: 1px solid blue;
+    border-radius: 10%;
+    background-color: blue;
+    height: auto;
+    width: 5.95vw;
 }
 
 .banner{
