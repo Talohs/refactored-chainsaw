@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "head1 head1 head1 head1"
+        "buttons buttons buttons buttons"
+        "banner banner list list"
+        "head2 head2 head2 head2"
+        "ED ED TM TM"
+        "AN AN PC PC " 
+}
+
+.headers{
+    grid-area: head1 / col2-start / row1-end / 4;
+    place-self: center;
+}
