@@ -1,17 +1,86 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "head1 head1 head1 head1"
         "buttons buttons buttons buttons"
         "banner banner list list"
-        "head2 head2 head2 head2"
-        "ED ED TM TM"
-        "AN AN PC PC " 
+        "solutions solutions solutions solutions"
+        "solutions solutions solutions solutions" 
 }
 
 .headers{
-    grid-area: head1 / col2-start / row1-end / 4;
-    place-self: center;
+    grid-area: head1;
+    display: flex;
+    justify-self: center;
+}
+
+#newbetter{
+    top: 2vw;
+    position:relative;
+
+}
+
+.buttons{
+    grid-area: buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btnbackground{
+    /* polygon (10% 0, 91% 0, 100% 9%, 100% 92%, 92% 100%, 10% 100%, 0 93%, 0 9%); */
+}
+
+.banner{
+    grid-area: banner;
+    justify-self: end;
+}
+
+.list{
+    grid-area: list;
+}
+
+.solutions{
+    grid-area: solutions;
+    display:grid;
+    grid-template-columns: 1fr 1fr;;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "head2 head2"
+    "ED TM"
+    "AN PC"
+}   
+
+.solutions > h4{
+    grid-area: head2;
+    justify-content: center;
+}
+
+.ED{
+    grid-area: ED;
+    /* display: flex; */
+    justify-self: center;
+}
+
+.TM{
+    grid-area: TM;
+    justify-self: center;
+}
+
+.AN{
+    grid-area: AN;
+    justify-self: center;
+}
+ 
+.PC{
+    grid-area:PC;
+    justify-self: center;
+}
+
+.icons{
+    position: relative;
+    bottom: 250px;
+    right: 246px;
 }
