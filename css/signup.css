@@ -1,0 +1,51 @@
+.container { 
+    min-height: 100vh; 
+    display: grid;
+    grid-template-columns: 1.2fr 1.6fr 0.2fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Navbar_and_Image . .";
+  }
+  .hero-image-of-signup-page{
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+.sign-up-text {
+font-size: 50px;
+padding-top: 20%;
+display: flex;
+justify-content: center;
+  }
+.bubbble-forms {
+padding-top: 15%;
+display: flex;
+justify-content: center;
+border-radius: 25px;
+width: 100%;  
+}
+.small-text-underneath-signup {
+    font-size: 10px;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;       
+}
+.social-image-links-with-circles {
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-between;      
+}
+.sign-up-button{ 
+    padding-top: 10%;   
+    display: flex;
+    justify-content: center;  }
+.image-circle-smallest-level{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+}
+  .Navbar_and_Image { grid-area: Navbar_and_Image; }
+  
