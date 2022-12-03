@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 12vw 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "head1 head1 head1 head1"
         "buttons buttons buttons buttons"
@@ -12,13 +12,18 @@
 
 .headers{
     grid-area: head1;
-    display: flex;
-    justify-self: center;
+    place-self: center;    
+}
+
+#topheader{
+    padding-left: 15vw;
+    font-family: sans-serif;
 }
 
 #newbetter{
-    top: 2vw;
+
     position:relative;
+    font-family: sans-serif;
 
 }
 
@@ -29,7 +34,7 @@
     justify-content: space-around;
 }
 
-.btnbgblye{
+.btnbgblue{
     border: 1px solid blue;
     border-radius: 10%;
     background-color: blue;
