@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 33vh 1fr 20.2vh 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -31,16 +31,35 @@
   .collect { grid-area: collect; 
     display: flex;
     flex-direction: column;
+    place-self: center start;
+    right: -30vw;
+    border: 1px solid blue;
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
+    background-color: blue;
+    height: 64vh;
+    width: 27vw;
   }
 
+  .collect > h1 {
+    color: aliceblue;
+    place-self: center center;
+  }
 
+  .collect > p {
+    color: aliceblue;
+    padding-left: 2vw;
+  }
   
   .sooner { grid-area: sooner; 
     display: flex;
+    place-self: center center;
   }
 
-  .sooner {
+  .sooner > p {
     place-self: center center;
+    width: 28vw;
+
   }
   
   .takepayment { grid-area: takepayment; 
@@ -50,9 +69,28 @@
   .getpaid { grid-area: getpaid; 
     display: flex;
     flex-direction: column;
+    place-self: center start;
+    right: -30vw;
+    border: 1px solid blue;
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
+    background-color: blue;
+    height: 101.6vh;
+    width: 27vw;
   }
 
   .getpaid > h1 {
     place-self: center center;
+    color: aliceblue;
+    margin-top: 25vh;
   }
+
+  .getpaid > p {
+    color: aliceblue;
+    padding-left: 2vw;
+    place-self: center center;
+    margin-top: 15vh;
+  }
+  
+
   
