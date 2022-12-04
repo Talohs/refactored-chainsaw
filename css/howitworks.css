@@ -1,0 +1,108 @@
+.container {  display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 33vh 1fr 45vh 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "howwork howwork"
+      "cinfo collect"
+      "sooner sooner"
+      "takepayment getpaid";
+  }
+  
+  .howwork { grid-area: howwork; 
+    place-self: center center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8vh;
+  }
+  
+  .howwork > h1 {
+    place-self: center center;
+  }
+
+  .howwork > p {
+    width: 28vw;
+  }
+
+  .cinfo { grid-area: cinfo; 
+    place-self: center end;
+    border: 1px solid grey;
+    border-bottom-left-radius: 8%;
+    border-top-left-radius: 8%;
+    /* height: 80vh; */
+    /* width: 40vw; */
+    padding-left: 3vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+  
+  .collect { grid-area: collect; 
+    display: flex;
+    flex-direction: column;
+    place-self: center start;
+    right: -30vw;
+    border: 1px solid blue;
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
+    background-color: blue;
+    height: 88.75vh;
+    width: 40vw;
+  }
+
+  .collect > h1 {
+    color: aliceblue;
+    place-self: center center;
+  }
+
+  .collect > p {
+    color: aliceblue;
+    padding-left: 2vw;
+  }
+  
+  .sooner { grid-area: sooner; 
+    display: flex;
+    place-self: center center;
+    margin-top: 30vh;
+    margin-bottom: 15vh;
+  }
+
+  .sooner > p {
+    place-self: center center;
+    width: 28vw;
+
+  }
+  
+  .takepayment { grid-area: takepayment; 
+    place-self: center end;
+  }
+  
+  .getpaid { grid-area: getpaid; 
+    display: flex;
+    flex-direction: column;
+    place-self: center start;
+    right: -30vw;
+    border: 1px solid blue;
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
+    background-color: blue;
+    height: 86.5vh;
+    width: 27vw;
+  }
+
+  .getpaid > h1 {
+    place-self: center center;
+    color: aliceblue;
+    margin-top: 25vh;
+  }
+
+  .getpaid > p {
+    color: aliceblue;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    place-self: center center;
+    margin-top: 15vh;
+  }
+
+
+  

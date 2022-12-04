@@ -1,0 +1,203 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;;
+    grid-template-rows: 12vw 12vw 60vh 12vw 1fr;
+    grid-template-areas:
+        "head1 head1 head1 head1"
+        "buttons buttons buttons buttons"
+        "banner banner list list"
+        "solutions solutions solutions solutions"
+        "solutions solutions solutions solutions" 
+}
+
+.headers{
+    grid-area: head1;
+    place-self: center;    
+}
+
+#topheader{
+    padding-left: 10vw;
+    font-family: sans-serif;
+}
+
+#newbetter{
+
+    position:relative;
+    font-family: sans-serif;
+
+}
+
+.buttons{
+    grid-area: buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btnbgblue{
+    border: 1px solid blue;
+    border-radius: 10%;
+    background-color: blue;
+    height: 20vh;
+    width: 7vw;
+    align-self: center;
+    /* display: flex; */
+}
+
+.button > img {
+    /* place-self: center end; */
+    display: relative;
+    left: 12vw;
+}
+
+.btnbgblue > img {
+    
+}
+
+#dollarbg {
+    /* place-self: center center; */
+    /* display: relative; */
+    /* bottom: 5vh; */
+}
+
+.btnbgwhite1{
+    border: 1px solid blue;
+    border-radius: 10%;
+    background-color: white;
+    height: 16vh;
+    width: 7vw;
+    align-self: center;
+}
+
+.btnbgwhite2{
+    border: 1px solid blue;
+    border-radius: 10%;
+    background-color: white;
+    height: 16vh;
+    width: 7vw;
+    align-self: center;
+}
+
+.btnbgwhite3{
+    border: 1px solid blue;
+    border-radius: 10%;
+    background-color: white;
+    height: 16vh;
+    width: 7vw;
+    align-self: center;
+}
+
+.icon{
+    /* place-self: flex-start center; */
+    display: relative;
+    left: 5vw;
+}
+
+#dollar{
+    /* place-self: center center; */
+    display: relative;
+    left: 10vw;
+}
+
+.banner{
+    grid-area: banner;
+    place-self: start end;
+}
+
+.list{
+    grid-area: list;
+    right: -30vw;
+    border: 1px solid blue;
+    /* border-radius: 10%; */
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
+    background-color: blue;
+    height: 53.1vh;
+    width: 27vw;
+}
+
+.headers{
+    padding-left: 1.75vw;
+}
+
+.list > h3{
+    color: aliceblue;
+}
+
+.list > p{
+    color: aliceblue;
+    padding-left: 1.75vw;
+}
+
+.list > ul > li{
+    color: aliceblue;
+}
+
+.solutions{
+    grid-area: solutions;
+    display:grid;
+    grid-template-columns: 1fr 1fr;;
+    grid-template-rows: 12vh 1fr 1fr;
+    grid-template-areas:
+    "head2 head2"
+    "ED TM"
+    "AN PC"
+}   
+
+.solutions > h1{
+    grid-area: head2;
+    justify-content: center;
+}
+
+#learnmore{
+    position: relative;
+    margin-left: 1.25vw;
+    background-color: blue;
+    border-color: aliceblue;
+    padding-top: .25vw;
+    padding-bottom: .25vw;
+    padding-left: 1.5vw;
+    padding-right: .5vw;
+    color: aliceblue;
+}
+
+#nxtarrow{
+    height: 2vh;
+    width: 1.25vw;
+    padding-left: 1vw;
+    padding-right: -2vw;
+}
+
+.ED{
+    grid-area: ED;
+    /* display: flex; */
+    place-self: center end;
+    margin-bottom: 5vh;
+}
+
+.TM{
+    grid-area: TM;
+    place-self: center;
+    margin-bottom: 5vh;
+}
+
+.AN{
+    grid-area: AN;
+    place-self: center end;
+}
+ 
+.PC{
+    grid-area:PC;
+    place-self: center;
+}
+
+.icons{
+    position: relative;
+    bottom: 32vh;
+    right: 246px;
+}
+
+.p601{
+    position: relative;
+    bottom: 4vh;
+}
