@@ -38,9 +38,26 @@
     border: 1px solid blue;
     border-radius: 10%;
     background-color: blue;
-    height: 16vh;
+    height: 20vh;
     width: 7vw;
     align-self: center;
+    /* display: flex; */
+}
+
+.button > img {
+    /* place-self: center end; */
+    display: relative;
+    left: 12vw;
+}
+
+.btnbgblue > img {
+    
+}
+
+#dollarbg {
+    /* place-self: center center; */
+    /* display: relative; */
+    /* bottom: 5vh; */
 }
 
 .btnbgwhite1{
@@ -73,6 +90,7 @@
 .icon{
     /* place-self: flex-start center; */
     display: relative;
+    left: 5vw;
 }
 
 #dollar{
