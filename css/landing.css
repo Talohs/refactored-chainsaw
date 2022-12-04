@@ -38,27 +38,55 @@
     border: 1px solid blue;
     border-radius: 10%;
     background-color: blue;
-    height: 20vh;
+    height: 18vh;
     width: 7vw;
     align-self: center;
     /* display: flex; */
 }
 
-.button > img {
+.button{
     /* place-self: center end; */
-    display: relative;
-    left: 12vw;
+    position: relative;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 10%;
+    /* display: block; */
+}
+
+.icon{
+    position: relative;
+    left: 35%;
+    transform: translateX(-50%);
 }
 
 .btnbgblue > img {
-    
+    position: relative;
+    transform: translateX(-50%);
+    right: 15%;
+    bottom: 10%;
 }
 
-#dollarbg {
-    /* place-self: center center; */
-    /* display: relative; */
-    /* bottom: 5vh; */
+.btnbgblue > p {
+    color: aliceblue;
+    text-indent: 25%;
+    margin-top: .75vh;
+    top: 1vh;
 }
+
+.whtbtntxt {
+    text-indent: 2vw;
+}
+
+.graph {
+    height: 50%;
+    width: 50%;
+}
+
+/* #dollarbg {
+    place-self: center center;
+    display: relative;
+    bottom: 5vh;
+} */
 
 .btnbgwhite1{
     border: 1px solid blue;
@@ -85,12 +113,6 @@
     height: 16vh;
     width: 7vw;
     align-self: center;
-}
-
-.icon{
-    /* place-self: flex-start center; */
-    display: relative;
-    left: 5vw;
 }
 
 #dollar{
@@ -193,7 +215,7 @@
 
 .icons{
     position: relative;
-    bottom: 32vh;
+    bottom: 44vh;
     right: 246px;
 }
 
